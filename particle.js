@@ -1,5 +1,5 @@
 function Person(x, y, m) {
-  this.pos = createVector(x, y);
+  this.pos.x = createVector(x, height);
   this.vel = createVector(0, 0);
   this.acc = createVector(0, 0);
   this.mass = m;
@@ -19,7 +19,7 @@ function Person(x, y, m) {
   this.display = function() {
     fill(255, 150);
     stroke(255);
-    ellipse(this.pos.x, this.pos.y, this.mass*10, this.mass*10);
+    rect(this.pos.x, this.pos.y, this.mass*10, this.mass*10);
   }
 
   this.edges = function() {
