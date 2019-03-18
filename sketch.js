@@ -2,7 +2,7 @@ var Person;
 
 function setup() {
   createCanvas(640, 360);
-  Person= new Person
+  person= new Person();
 }
 
 function Person(x,y) {
